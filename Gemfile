@@ -11,6 +11,7 @@ gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
 gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
+gem 'pry', '~> 0.13.1'
 gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem 'rubocop-rails', '~> 2.11', '>= 2.11.3'

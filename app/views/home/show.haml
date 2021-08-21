@@ -1,0 +1,4 @@
+%p Welcome to My Weather Site
+
+%p Today in #{@body['name']} is #{@body.dig('main', 'temp')} and it`s fells like #{@body.dig('main', 'feels_like')}
+%p Sky is #{@body['weather'].first['main'].downcase}
