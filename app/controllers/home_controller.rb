@@ -4,7 +4,7 @@ class HomeController < ApplicationController
     if response.status == 200
       @body ||= Weather::CityInfo.call(response)
     else
-      redirect_to :root, notice: "City not found"
+      redirect_to :root, alert: t('errors.city_not_found')
     end
   end
 

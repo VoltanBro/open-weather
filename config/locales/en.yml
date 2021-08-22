@@ -30,4 +30,12 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  errors:
+    city_not_found: 'City not found'
+  view:
+    home:
+      show:
+        city_info: "Today in %{city} is %{temp} and it`s fells like %{feels_like}"
+        sky_info: "Sky is %{sky_info}"
+        city_label: "City: "
+        search_button: Search

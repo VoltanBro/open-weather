@@ -6,6 +6,8 @@ module Weather
 
     def call
       @response ||= Faraday.get "http://api.openweathermap.org/data/2.5/weather?q=#{user_city}&appid=#{weather_api}&units=metric"
+    rescue URI::InvalidURIError
+      response = OpenStruct.new(status: 404)
     end
 
     private

@@ -1,11 +1,10 @@
 %body
   .bgimg
-  .info_block= "Today in #{city_name} is #{temp} and it`s fells like #{feels_like}"
-  .sky_block= "Sky is #{sky}"
+  .info_block= t('view.home.show.city_info', city: city_name, temp: temp, feels_like: feels_like)
+  .sky_block= t('view.home.show.sky_info', sky_info: sky)
 %footer
   .find_city
     = form_with url: home_path, method: :get do |form|
-      = form.label :city, "City:"
+      = form.label :city, t('view.home.show.city_label')
       = form.text_field :city
-      = form.submit "Search"
-
+      = form.submit t('view.home.show.search_button')
