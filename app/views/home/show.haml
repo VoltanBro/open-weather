@@ -1,4 +1,6 @@
-%p Welcome to My Weather Site
+%body
+  .bgimg
+  .info_block= "Today in #{city_name} is #{temp} and it`s fells like #{feels_like}"
+  .sky_block= "Sky is #{sky}"
+  .form_input= 'Find your city'
 
-%p Today in #{@body['name']} is #{@body.dig('main', 'temp')} and it`s fells like #{@body.dig('main', 'feels_like')}
-%p Sky is #{@body['weather'].first['main'].downcase}
