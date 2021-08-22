@@ -46,3 +46,16 @@ body, html {
   justify-content: center;
   flex-direction: row;
 }
+
+.find_city {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  padding-bottom: 45px;
+}
+
+input {
+  width: 100px;
+}
