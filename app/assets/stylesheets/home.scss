@@ -1,3 +1,48 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body, h1 {
+  font-family: "Raleway", system-ui;
+  color: white;
+}
+
+body, html {
+  background: url(forest_bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.info_block {
+  font-size: 50px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.sky_block {
+  font-size: 36px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.form_input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 36px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
