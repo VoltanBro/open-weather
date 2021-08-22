@@ -1,5 +1,5 @@
 module Callable
-  def call(*args)
-    new(*args).call
+  def call(*args, &block)
+    new(*args, &block).call
   end
 end
